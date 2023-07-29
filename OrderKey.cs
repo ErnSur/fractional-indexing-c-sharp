@@ -25,7 +25,6 @@ namespace FractionalIndexing
             {
                 var n = 0;
                 while (n < b.Length && (b[n] == zero[0] || (n < a.Length && a[n] == b[n])))
-                    // while (n < a.Length && n < b.Length && (a[n] == b[n] || zero == b[n]))
                 {
                     n++;
                 }
@@ -230,7 +229,6 @@ namespace FractionalIndexing
                 }
                 else
                 {
-                    //digs = digs[..^1];
                     Array.Resize(ref digs, digs.Length - 1);
                 }
 
